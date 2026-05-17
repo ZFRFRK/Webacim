@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Input Data Siswa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            color: black;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px grey;
+        }
+
+        .form-container {
+            background-color: black;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px grey;
+            width: 400px;
+            margin-top: 20px;
+            color: white;
+            margin: 20px auto;
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+
+        label {
+            font-weight: bold;
+            border-radius: 20px;
+            display: block;
+            margin: 10px 0;
+        }
+
+        button{
+            background-color: white;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.5s ease;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+        }
+
+        .note {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px grey;
+            width: 200px;
+            margin-top: 20px;
+}
+    </style>
+</head>
+
+    <body>
+    <header>
+        <h2>INPUT DATA SISWA</h2>
+    </header>
+
+    <div style="display: flex; gap: 20px; align-items: flex-start; justify-content: center;">
+        
+        <div class="form-container">
+            <form action="submit.php" method="post">
+                <label for="nama">Nama:</label><br>
+                <input type="text" name="nama" required><br><br>
+
+                <label for="kelas">Kelas:</label><br>
+                <input type="text" name="kelas" required><br><br>
+                <button type="submit">Simpan</button>
+            </form>
+        </div>
+
+        <div class="note">
+            <h4>Note :</h4>
+            <p>Silahkan masukan nama dan kelas dengan benar.</p>
+        </div>
+    </div>
+    </body>
